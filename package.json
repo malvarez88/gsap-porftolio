@@ -11,6 +11,8 @@
   "dependencies": {
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
+    "gsap": "^3.12.2",
+    "locomotive-scroll": "^5.0.0-beta.8",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0"
