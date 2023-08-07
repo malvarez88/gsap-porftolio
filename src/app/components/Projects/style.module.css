@@ -1,0 +1,72 @@
+.projects{
+    position: relative;
+    color: white;
+    margin-top: 25vh;
+    padding: 10%;
+}
+
+.projectDescription{
+    display: flex;
+    height: 500px;
+    justify-content: space-evenly;
+    gap: 5%;
+}
+
+.imageContainer{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    z-index: 10;
+}
+
+.imageContainer img{
+    object-fit: cover;
+}
+
+.column{
+    display: grid;
+    height: 100%;
+    width: 40%;
+    font-size: 1.6vw;
+    padding: 20px;
+}
+
+.column a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.column a:hover {
+    text-decoration: underline;
+}
+
+.column:last-of-type{
+    align-items: flex-end;
+    font-size: 1vw;
+}
+
+.projectList{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 200px;
+}
+
+.projectEl{
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6vw;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: flex-end;
+}
+.projectEl h2{
+    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    cursor: default;
+}

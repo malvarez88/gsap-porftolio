@@ -1,3 +1,5 @@
+@import 'node_modules/locomotive-scroll/dist/locomotive-scroll';
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,9 +7,10 @@
 }
 
 body {
-  background: rgb(224,216,181);
+  background-color: black;
+  /* background: rgb(224,216,181);
   background: -moz-radial-gradient(circle, rgba(224,216,181,1) 0%, rgba(78,127,74,1) 0%, rgba(0,0,0,1) 100%);
   background: -webkit-radial-gradient(circle, rgba(224,216,181,1) 0%, rgba(78,127,74,1) 0%, rgba(0,0,0,1) 100%);
   background: radial-gradient(circle, rgba(224,216,181,1) 0%, rgba(78,127,74,1) 0%, rgba(0,0,0,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e0d8b5",endColorstr="#000000",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e0d8b5",endColorstr="#000000",GradientType=1); */
 }
