@@ -12,15 +12,22 @@ const Index = () => {
   const [selectedProject, setSelectedProject] = useState(0);
   const container = useRef(null);
   const imageContainer = useRef(null);
+  const columnRef = useRef(null)
 
   useLayoutEffect( () => {
     gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.create({
         trigger: imageContainer.current,
         pin: true,
-        start: "top-=100px",
+        start: "-=200px",
         end: document.body.offsetHeight - window.innerHeight - 50,
     })
+    ScrollTrigger.create({
+        trigger: columnRef.current,
+        pin: true,
+        start: '=-700px',
+        end: document.body.offsetHeight - window.innerHeight - 50
+    }, 0)
 }, [])
 
   return (
@@ -34,7 +41,7 @@ const Index = () => {
             priority={true}
           />
         </div>
-        <div className={styles.column}>
+        <div ref={columnRef} className={styles.column}>
           <p>
             {projects[selectedProject].description}
           </p>

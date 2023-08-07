@@ -23,7 +23,7 @@ const projects = [
     type: "UX/UI, Development",
   },
   {
-    title: "Andes Origen - Fresquita",
+    title: "Andes - Fresquita",
     slug: "Andes",
     description:
       "Developed a button-pressing game for Andes Fresquita, featuring a spinning fan and discounts rewarded based on the achieved number. Utilized CSS and jQuery animations in the game and ensured regular maintenance for the web application.",
