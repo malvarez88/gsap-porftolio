@@ -105,7 +105,8 @@ const projects = [
   },
 ];
 
-
 const phrases = ["Creative Web Design", "UI/UX Integration", "Pixel-Perfect Implementation", "Interactive User Experiences", "Design-Driven Development"]
 
-export { projects, phrases };
+const loading = ["Hello", "Bonjour", "Ciao", "Olà", "やあ", "Hallå", "Guten tag", "Hallo"]
+
+export { projects, phrases, loading };
