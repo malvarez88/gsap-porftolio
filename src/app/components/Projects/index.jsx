@@ -14,21 +14,47 @@ const Index = () => {
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    ScrollTrigger.create({
+    const descriptionPin = ScrollTrigger.create({
       trigger: imageContainer.current,
       pin: true,
-      start: "-=200px",
-      end: document.body.offsetHeight - window.innerHeight - 50,
+      markers: true,
+      start: "-=100", // Pin the container at the top of the viewport
+      end: () =>
+        `+=${columnRef.current.offsetHeight + 1000}` // Adjust the end position
     });
+
+    // ScrollTrigger.create({
+    //   trigger: imageContainer.current,
+    //   pin: true,
+    //   start: "-=100px",
+    //   end: document.body.offsetHeight - window.innerHeight - 50,
+    // });
     ScrollTrigger.create(
       {
         trigger: columnRef.current,
         pin: true,
-        start: "=-650px",
-        end: document.body.offsetHeight - window.innerHeight - 50,
-      },
-      0
+        start: "=-500px",
+        end: () =>
+        `+=${columnRef.current.offsetHeight + 1000}`,
+      },0
     );
+    gsap.to(descriptionPin, {
+      duration: 1,
+      opacity: 0,
+      ease: "none",
+      scrollTrigger: {
+        trigger: columnRef.current,
+        start: "top top",
+        end: () =>
+          `+=${columnRef.current.offsetHeight + 1000}`, // Adjust the end position
+        scrub: true
+      }
+    });
+
+    // Clean up ScrollTrigger when the component unmounts
+    return () => {
+      descriptionPin.kill();
+    };
   }, []);
 
   return (

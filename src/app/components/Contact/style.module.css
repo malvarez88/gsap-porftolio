@@ -1,0 +1,134 @@
+.contact {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #141516;
+  position: relative;
+}
+
+.contactBody {
+  padding-top: 200px;
+  width: 100%;
+  max-width: 1800px;
+  background-color: #141516;
+}
+
+.title {
+  border-bottom: 1px solid rgb(134, 134, 134);
+  padding-bottom: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  position: relative;
+}
+
+.title h2 {
+  font-size: 3vw;
+  margin: 0px;
+  font-weight: 300;
+}
+
+.title span {
+  display: flex;
+  align-items: center;
+}
+
+.imageContainer {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.imageContainer img {
+  object-fit: cover;
+}
+
+.imageContainer h2 {
+  margin-left: 0.3em;
+}
+
+.buttonContainer {
+  position: absolute;
+  left: calc(100% - 400px);
+  top: calc(100% - 75px);
+}
+
+.button {
+  width: 180px;
+  height: 180px;
+  background-color: #ec4e39;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button p {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 300;
+  z-index: 2;
+  position: relative;
+}
+
+.button svg {
+  position: absolute;
+  top: 30%;
+  left: 100%;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  padding: 20px;
+}
+
+.info div {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.info div p {
+  margin: 0px;
+  padding: 2.5px;
+  cursor: pointer;
+}
+
+.info div h3 {
+  margin: 0px;
+  padding: 2.5px;
+  cursor: pointer;
+}
+
+/* .info div p &::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: white;
+  display: block;
+  margin-top: 2px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.2s linear;
+}
+
+.info div p:hover:after {
+  width: 100%;
+} */
