@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useLayoutEffect, useRef } from "react";
 
-import { phrases } from "@/app/constants";
+import { phrases } from "@/utils/constants";
 
 const Index = () => {
   return (

@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useState } from "react";
-import { projects } from "@/app/constants";
+import { projects } from "@/utils/constants";
 import Image from "next/image";
 
 const Index = () => {
