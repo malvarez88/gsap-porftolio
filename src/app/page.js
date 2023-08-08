@@ -34,6 +34,7 @@ export default function Home() {
       <Description />
       <About />
       <Projects />
+      <About />
       {/* <Contact /> */}
     </main>
   );

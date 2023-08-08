@@ -17,15 +17,18 @@ const Index = () => {
     ScrollTrigger.create({
       trigger: imageContainer.current,
       pin: true,
+      markers: true,
       start: "-=200px",
-      end: document.body.offsetHeight - window.innerHeight - 50,
+      // 
+      end: "bottom"
     });
     ScrollTrigger.create(
       {
         trigger: columnRef.current,
         pin: true,
-        start: "=-650px",
-        end: document.body.offsetHeight - window.innerHeight - 50,
+        markers: true,
+        start: "=-600px",
+        end: "bottom +=200px",
       },
       0
     );
