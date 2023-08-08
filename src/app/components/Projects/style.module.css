@@ -1,7 +1,7 @@
 .projects {
   position: relative;
   color: white;
-  margin-top: 25vh;
+  /* margin-top: 25vh; */
   padding: 10%;
   display: flex;
   gap: 5%;
@@ -27,6 +27,7 @@
   object-fit: contain;
   width: 100%;
   height: 100%;
+  filter: sepia(20%);
 }
 
 .imageContainer span {
@@ -52,13 +53,12 @@
 
 .column a {
   text-decoration: none;
-  color: inherit;
+  color:#afa18f;
   text-transform: uppercase;
   display: inline-flex;
   justify-content: center;
   width: 150px;
   margin: auto;
-  
 }
 
 .column p {
@@ -67,7 +67,7 @@
 
 .column span {
   margin-top: 1.5vh;
-  border: 1px solid white;
+  border: 1px solid #afa18f;
   padding: 10px 15px;
   border-radius: 10px;
   backdrop-filter: blur(10px);
@@ -100,10 +100,10 @@
 
 .projectEl {
   width: 100%;
-  color: white;
+  color: #afa18f;
   text-transform: uppercase;
   font-size: 1.6vw;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #afa18f;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -120,6 +120,6 @@
   font-size: 10px;
 }
 
-.projectEl h2:hover {
+.projectEl:hover > h2 {
   font-style: italic;
 }

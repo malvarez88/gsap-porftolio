@@ -27,7 +27,7 @@ const Index = () => {
     <div className={styles.homeHeader}>
       <div ref={backgroundImg} className={styles.backgroundImage}>
         <Image
-          src={"/images/cover2.avif"}
+          src={"/images/beach.avif"}
           fill={true}
           alt="bg-image"
           priority={true}

@@ -2,9 +2,7 @@ import React, { useLayoutEffect, useRef } from "react";
 import styles from "./style.module.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import { useState } from "react";
-
 import { projects } from "@/app/constants";
 import Image from "next/image";
 
@@ -55,9 +53,15 @@ const Index = () => {
             >
               <span>Visit Site</span>
             </a>
-            <a href={projects[selectedProject].github} target="_blank" referrerPolicy="noreferrer">
-              <span>Github</span>
-            </a>
+            {projects[selectedProject].github ? (
+              <a
+                href={projects[selectedProject].github}
+                target="_blank"
+                referrerPolicy="noreferrer"
+              >
+                <span>Github</span>
+              </a>
+            ) : null}
           </div>
         </div>
         {/* <div className={styles.column}>
