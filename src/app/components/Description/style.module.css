@@ -1,0 +1,16 @@
+.description {
+  position: relative;
+  z-index: 1;
+  font-size: 2vw;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 15vw;
+  margin-left: 10vw;
+}
+
+.description p {
+  margin: 0px;
+  position: relative;
+  font-weight: 100;
+  letter-spacing: -2px;
+}
