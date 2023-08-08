@@ -2,12 +2,19 @@
 import useMousePosition from "@/utils/useMousePosition";
 import styles from "./style.module.css";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Index = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const [initialX, setInitialX] = useState(0);
+  const [initialY, setInitialY] = useState(0);
   const { x, y } = useMousePosition();
   const size = isHovered ? 400 : 40;
+
+  useEffect(() => {
+    setInitialX(0);
+    setInitialY(0);
+  }, []);
 
   return (
     <div className={styles.about}>

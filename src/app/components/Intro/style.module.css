@@ -34,7 +34,7 @@
 }
 
 .introImage{
-    filter: brightness(70%);
+    filter: brightness(70%) sepia(40%);
     width: 350px;
     height: 470px;
     position: absolute;
