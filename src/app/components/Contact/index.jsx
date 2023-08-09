@@ -23,7 +23,7 @@ const Index = () => {
                             <Image 
                             fill={true}
                             alt={"image"}
-                            src={`/images/tazmania.avif`}
+                            src={"/images/tazmania.avif"}
                             />
                         </div>
                         <h2>Let&apos;s work together</h2>
