@@ -56,7 +56,7 @@
 
 .column a {
   text-decoration: none;
-  color:#afa18f;
+  color: #afa18f;
   text-transform: uppercase;
   display: inline-flex;
   justify-content: center;
@@ -76,7 +76,6 @@
   backdrop-filter: blur(10px);
 }
 
-
 .column a:hover {
   text-decoration: underline;
 }
@@ -87,8 +86,8 @@
 }
 
 .cta {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .projectList {
@@ -125,4 +124,46 @@
 
 .projectEl:hover > h2 {
   font-style: italic;
+}
+/* 
+@media screen and (max-width: 480px) {
+  .projects {
+    height: 80vh;
+  }
+
+} */
+
+/* Existing styles */
+
+/* ... (your other styles) ... */
+
+@media screen and (max-width: 480px) {
+  .projects {
+    height: auto; /* Adjust height for mobile */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 5%; /* Reduce padding for mobile */
+  }
+
+  .projectDescription {
+    width: 100%; /* Take up full width on mobile */
+  }
+
+  .imageContainer {
+    width: 100%; /* Take up full width on mobile */
+  }
+
+  .column {
+    width: 100%; /* Take up full width on mobile */
+    font-size: 4vw; /* Adjust font size for mobile */
+    padding: 5px; /* Adjust padding for mobile */
+  }
+
+  .projectList {
+    margin-top: 50px; /* Adjust margin for mobile */
+    width: 100%; /* Take up full width on mobile */
+  }
+
+  .projectEl {
+    font-size: 4vw; /* Adjust font size for mobile */
+  }
 }

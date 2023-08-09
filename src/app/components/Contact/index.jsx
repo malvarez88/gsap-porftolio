@@ -29,7 +29,7 @@ const Index = () => {
                         <h2>Let&apos;s work together</h2>
                     </span>
                     <motion.div style={{x}} className={styles.buttonContainer}>
-                        <div  backgroundColor={"#334BD3"} className={styles.button}>
+                        <div className={styles.button}>
                             <p>Get in touch</p>
                         </div>
                     </motion.div>

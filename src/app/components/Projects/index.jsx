@@ -13,6 +13,27 @@ const Index = () => {
   const columnRef = useRef(null);
 
   useLayoutEffect(() => {
+
+    if (window.innerWidth <= 480) {
+      ScrollTrigger.create({
+        trigger: imageContainer.current,
+        pin: true,
+        start: "top -=100px",
+        end: "bottom bottom",
+      });
+  
+      ScrollTrigger.create(
+        {
+          trigger: columnRef.current,
+          pin: true,
+          start: "top top",
+          end: "bottom bottom",
+        },
+        0
+      );
+    }
+
+
     gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.create({
       trigger: imageContainer.current,

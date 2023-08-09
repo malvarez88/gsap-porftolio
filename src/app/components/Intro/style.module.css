@@ -1,46 +1,72 @@
-.homeHeader{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.homeHeader {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.backgroundImage{
-    width: 100%;
-    height: 120vh;
-    position: absolute;
-    filter: brightness(60%);
+.backgroundImage {
+  width: 100%;
+  height: 120vh;
+  position: absolute;
+  filter: brightness(60%);
 }
 
-.backgroundImage img{
-    object-fit: cover;
+.backgroundImage img {
+  object-fit: cover;
 }
 
-.intro{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-top: 35vh;
+.intro {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 35vh;
 }
 
-.intro h1{
-    color: #afa18f;
-    font-size: 7vw;
-    z-index: 3;
-    text-align: center;
-    white-space: nowrap;
+.intro h1 {
+  color: #afa18f;
+  font-size: 7vw;
+  z-index: 3;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 20vh;
+  letter-spacing: -10px;
+}
+
+.introImage {
+  filter: brightness(70%) sepia(40%);
+  width: 350px;
+  height: 470px;
+  position: absolute;
+}
+
+.introImage img {
+  object-fit: cover;
+  object-position: top;
+}
+
+/* 
+Mobile (Smartphone) max-width: 480px
+Low Resolution Tablets and ipads max-width: 767px
+Tablets Ipads portrait mode max-width:1024px
+Desktops max-width:1280px
+Huge size (Larger screen) max-width: 1281px and greater */
+
+@media screen and (max-width: 480px) {
+  .backgroundImage {
+    height: 100vh;
+  }
+  .introImage {
+    width: 100px;
+    height: 100px;
+  }
+  .intro {
     margin-top: 20vh;
-    letter-spacing: -10px;
-}
+  }
 
-.introImage{
-    filter: brightness(70%) sepia(40%);
-    width: 350px;
-    height: 470px;
-    position: absolute;
-}
-
-.introImage img{
-    object-fit: cover;
-    object-position: top;
+  .intro h1 {
+    font-size: 5vw;
+    margin-top: 14vh;
+    letter-spacing: 0;
+  }
 }

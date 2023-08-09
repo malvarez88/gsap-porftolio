@@ -142,3 +142,52 @@
   .info div p:hover:after {
     width: 100%;
   } */
+
+
+
+/* Media query for screens up to 480px wide */
+@media (max-width: 480px) {
+  .contactBody {
+    padding-top: 100px; 
+  }
+  
+  .title {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 50px;
+  }
+  
+  .title h2 {
+    font-size: 5vw; 
+  }
+  
+  .imageContainer {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .buttonContainer {
+    left: calc(100% - 100px); 
+    top: calc(100% - 50px); 
+  }
+  
+  .button {
+    width: 100px; 
+    height: 100px;
+  }
+  
+  .button p {
+    font-size: 12px; 
+  }
+  
+  .nav {
+    gap: 5%; 
+    margin-left: 20px; 
+    margin-right: 20px; 
+  }
+  
+  .info {
+    margin-top: 100px; 
+    padding: 10px; 
+  }
+}

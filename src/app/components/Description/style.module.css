@@ -15,3 +15,14 @@
   letter-spacing: -2px;
   color: #afa18f;
 }
+
+
+@media screen and (max-width: 480px) { 
+
+.description {
+  margin-top: 40vh;
+  margin-left: 10vw;
+}
+
+
+}
