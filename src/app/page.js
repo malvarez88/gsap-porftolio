@@ -5,7 +5,7 @@ import Intro from "./components/Intro";
 import Description from "./components/Description";
 import About from "./components/About";
 import Projects from "./components/Projects";
-// import Contact from './components/Contact'
+import Contact from './components/Contact'
 import Preloader from "./components/Preloader";
 import { AnimatePresence } from "framer-motion";
 
@@ -34,8 +34,7 @@ export default function Home() {
       <Description />
       <About />
       <Projects />
-      <About />
-      {/* <Contact /> */}
+      <Contact />
     </main>
   );
 }
