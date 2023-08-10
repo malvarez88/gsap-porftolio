@@ -103,15 +103,16 @@
 
   .info {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-top: 200px;
     padding: 20px;
+    padding-right: 180px;
+    /* align-content: end; */
   }
   
   .info div {
     display: flex;
     gap: 10px;
-    align-items: flex-end;
   }
   
   .info div p {
@@ -122,6 +123,7 @@
   .info div h3 {
     margin: 0px;
     padding: 2.5px;
+    text-align: right;
   }
   
 

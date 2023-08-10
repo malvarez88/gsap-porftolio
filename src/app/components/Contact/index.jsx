@@ -50,7 +50,6 @@ const Index = () => {
                 target="_blank"
                 referrerPolicy="noreferrer"
               >
-                {" "}
                 marianoalvarez66@gmail.com
               </a>
             </p>
