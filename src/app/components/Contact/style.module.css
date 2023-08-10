@@ -169,7 +169,7 @@
   }
   
   .buttonContainer {
-    left: calc(100% - 100px); 
+    left: calc(100% - 150px);
     top: calc(100% - 50px); 
   }
   
