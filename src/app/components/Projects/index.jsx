@@ -11,31 +11,33 @@ const Index = () => {
   const container = useRef(null);
   const imageContainer = useRef(null);
   const columnRef = useRef(null);
+  const descRef = useRef(null)
 
   useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    ScrollTrigger.create({
-      trigger: imageContainer.current,
-      pin: true,
-      // markers: true,
-      start: "-=200px",
-      end: "bottom"
-    });
-    ScrollTrigger.create(
-      {
-        trigger: columnRef.current,
+    if (window.innerWidth <= 480) {
+      ScrollTrigger.create({
+        trigger: descRef.current,
         pin: true,
-        // markers: true,
-        start: "=-600px",
-        end: "bottom +=200px",
-      },
-      0
-    );
-  }, []);
+        // markers:true,
+        start: "top top",
+        end: "bottom center",
+      });
+    }
+
+
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.create({
+    trigger: descRef.current,
+    pin: true,
+    // markers:true,
+    start: "-230px top",
+    end: "bottom center",
+  });
+}, []);
 
   return (
     <div ref={container} className={styles.projects}>
-      <div className={styles.projectDescription}>
+      <div ref={descRef} className={styles.projectDescription}>
         <div ref={imageContainer} className={styles.imageContainer}>
           <Image
             src={`/images/${projects[selectedProject].image}`}
@@ -66,11 +68,6 @@ const Index = () => {
             ) : null}
           </div>
         </div>
-        {/* <div className={styles.column}>
-          <a href={projects[selectedProject].deploy} target="_blank" referrerPolicy="noreferrer">
-           <p>Visit Site</p>
-          </a>
-        </div> */}
       </div>
 
       <div className={styles.projectList}>

@@ -51,3 +51,16 @@
   position: absolute;
   color: black;
 }
+
+@media screen and (max-width: 480px) { 
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .mask, .desc {
+    font-size: 20px;
+  }
+}

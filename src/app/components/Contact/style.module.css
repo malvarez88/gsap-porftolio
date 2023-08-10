@@ -103,15 +103,16 @@
 
   .info {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-top: 200px;
     padding: 20px;
+    padding-right: 180px;
+    /* align-content: end; */
   }
   
   .info div {
     display: flex;
     gap: 10px;
-    align-items: flex-end;
   }
   
   .info div p {
@@ -122,6 +123,7 @@
   .info div h3 {
     margin: 0px;
     padding: 2.5px;
+    text-align: right;
   }
   
 
@@ -142,3 +144,53 @@
   .info div p:hover:after {
     width: 100%;
   } */
+
+
+
+/* Media query for screens up to 480px wide */
+@media (max-width: 480px) {
+  .contactBody {
+    padding-top: 100px; 
+  }
+  
+  .title {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 50px;
+  }
+  
+  .title h2 {
+    font-size: 5vw; 
+  }
+  
+  .imageContainer {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .buttonContainer {
+    left: calc(100% - 100px); 
+    top: calc(100% - 50px); 
+  }
+  
+  .button {
+    width: 100px; 
+    height: 100px;
+  }
+  
+  .button p {
+    font-size: 12px; 
+  }
+  
+  .nav {
+    flex-direction: column;
+    gap: 5%; 
+    margin-left: 20px; 
+    margin-right: 20px; 
+  }
+  
+  .info {
+    margin-top: 100px; 
+    padding: 10px; 
+  }
+}
