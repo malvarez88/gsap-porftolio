@@ -20,11 +20,11 @@ const Index = () => {
         pin: true,
         // markers:true,
         start: "top top",
-        end: "bottom center",
+        end: "bottom bottom",
       });
     }
 
-
+if(window.innerWidth > 500) {
   gsap.registerPlugin(ScrollTrigger);
   ScrollTrigger.create({
     trigger: descRef.current,
@@ -33,6 +33,7 @@ const Index = () => {
     start: "-230px top",
     end: "bottom center",
   });
+}
 }, []);
 
   return (

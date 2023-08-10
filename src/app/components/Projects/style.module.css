@@ -136,31 +136,38 @@
 
 @media screen and (max-width: 480px) {
   .projects {
-    height: auto; /* Adjust height for mobile */
-    flex-direction: column; /* Stack elements vertically */
-    padding: 5%; /* Reduce padding for mobile */
+    height: auto; 
+    flex-direction: column; 
+    padding: 5%; 
   }
 
   .projectDescription {
-    width: 100%; /* Take up full width on mobile */
+    width: 100%;
   }
 
   .imageContainer {
-    width: 100%; /* Take up full width on mobile */
+    width: 100%; 
   }
 
   .column {
-    width: 100%; /* Take up full width on mobile */
-    font-size: 4vw; /* Adjust font size for mobile */
-    padding: 5px; /* Adjust padding for mobile */
+    width: 100%; 
+    padding: 5px; 
+  }
+
+  .column p {
+    font-size: 20px;
   }
 
   .projectList {
-    margin-top: 50px; /* Adjust margin for mobile */
-    width: 100%; /* Take up full width on mobile */
+    margin-top: 50px; 
+    width: 100%; 
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .projectEl {
-    font-size: 4vw; /* Adjust font size for mobile */
+    font-size: 4vw;
+    justify-content: center;
+  
   }
 }
