@@ -11,21 +11,23 @@ const Index = () => {
   const container = useRef(null);
   const imageContainer = useRef(null);
   const columnRef = useRef(null);
+  const descRef = useRef(null)
 
   useLayoutEffect(() => {
-
     if (window.innerWidth <= 480) {
       ScrollTrigger.create({
         trigger: imageContainer.current,
         pin: true,
+        scrub: true,
         start: "top -=100px",
-        end: "bottom bottom",
+        end: "bottom center",
       });
-  
+
       ScrollTrigger.create(
         {
           trigger: columnRef.current,
           pin: true,
+          scrub: true,
           start: "top top",
           end: "bottom bottom",
         },
@@ -33,30 +35,50 @@ const Index = () => {
       );
     }
 
+  //   gsap.registerPlugin(ScrollTrigger);
+  //   ScrollTrigger.create({
+  //     trigger: imageContainer.current,
+  //     pin: true,
+  //     markers: true,
+  //     start: "-200px top",
+  //     end: "bottom center",
+  //   });
+  //   ScrollTrigger.create(
+  //     {
+  //       trigger: columnRef.current,
+  //       pin: true,
+  //       markers: true,
+  //       start: "-600px top",
+  //       end: "bottom center",
+  //     },
+  //     0
+  //   );
+  // }, []);
 
-    gsap.registerPlugin(ScrollTrigger);
-    ScrollTrigger.create({
-      trigger: imageContainer.current,
-      pin: true,
-      // markers: true,
-      start: "-=200px",
-      end: "bottom"
-    });
-    ScrollTrigger.create(
-      {
-        trigger: columnRef.current,
-        pin: true,
-        // markers: true,
-        start: "=-600px",
-        end: "bottom +=200px",
-      },
-      0
-    );
-  }, []);
+
+  gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.create({
+    trigger: descRef.current,
+    pin: true,
+    // markers:true,
+    start: "-230px top",
+    end: "bottom center",
+  });
+  // ScrollTrigger.create(
+  //   {
+  //     trigger: columnRef.current,
+  //     pin: true,
+  //     markers: true,
+  //     start: "-600px top",
+  //     end: "bottom center",
+  //   },
+  //   0
+  // );
+}, []);
 
   return (
     <div ref={container} className={styles.projects}>
-      <div className={styles.projectDescription}>
+      <div ref={descRef} className={styles.projectDescription}>
         <div ref={imageContainer} className={styles.imageContainer}>
           <Image
             src={`/images/${projects[selectedProject].image}`}

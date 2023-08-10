@@ -5,8 +5,9 @@
   padding: 10%;
   display: flex;
   gap: 5%;
-  /* height: 140vh; */
-  /* z-index: 10; */
+  /* height: 120vh; */
+  z-index: 10;
+  background-color: black;
 }
 
 .projectDescription {
