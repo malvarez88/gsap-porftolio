@@ -13,8 +13,6 @@
 .projectDescription {
   display: flex;
   height: 600px;
-  /* justify-content: space-evenly;
-    gap: 5%; */
   flex-direction: column;
   width: 55%;
 }
@@ -46,8 +44,6 @@
 
 .column {
   display: grid;
-  /* height: 100%; */
-  /* width: 40%; */
   width: 100%;
   font-size: 1.6vw;
   padding: 20px;

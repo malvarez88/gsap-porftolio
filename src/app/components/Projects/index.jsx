@@ -16,44 +16,13 @@ const Index = () => {
   useLayoutEffect(() => {
     if (window.innerWidth <= 480) {
       ScrollTrigger.create({
-        trigger: imageContainer.current,
+        trigger: descRef.current,
         pin: true,
-        scrub: true,
-        start: "top -=100px",
+        // markers:true,
+        start: "top top",
         end: "bottom center",
       });
-
-      ScrollTrigger.create(
-        {
-          trigger: columnRef.current,
-          pin: true,
-          scrub: true,
-          start: "top top",
-          end: "bottom bottom",
-        },
-        0
-      );
     }
-
-  //   gsap.registerPlugin(ScrollTrigger);
-  //   ScrollTrigger.create({
-  //     trigger: imageContainer.current,
-  //     pin: true,
-  //     markers: true,
-  //     start: "-200px top",
-  //     end: "bottom center",
-  //   });
-  //   ScrollTrigger.create(
-  //     {
-  //       trigger: columnRef.current,
-  //       pin: true,
-  //       markers: true,
-  //       start: "-600px top",
-  //       end: "bottom center",
-  //     },
-  //     0
-  //   );
-  // }, []);
 
 
   gsap.registerPlugin(ScrollTrigger);
@@ -64,16 +33,6 @@ const Index = () => {
     start: "-230px top",
     end: "bottom center",
   });
-  // ScrollTrigger.create(
-  //   {
-  //     trigger: columnRef.current,
-  //     pin: true,
-  //     markers: true,
-  //     start: "-600px top",
-  //     end: "bottom center",
-  //   },
-  //   0
-  // );
 }, []);
 
   return (
@@ -109,11 +68,6 @@ const Index = () => {
             ) : null}
           </div>
         </div>
-        {/* <div className={styles.column}>
-          <a href={projects[selectedProject].deploy} target="_blank" referrerPolicy="noreferrer">
-           <p>Visit Site</p>
-          </a>
-        </div> */}
       </div>
 
       <div className={styles.projectList}>
