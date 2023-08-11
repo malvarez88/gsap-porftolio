@@ -122,17 +122,6 @@
 .projectEl:hover > h2 {
   font-style: italic;
 }
-/* 
-@media screen and (max-width: 480px) {
-  .projects {
-    height: 80vh;
-  }
-
-} */
-
-/* Existing styles */
-
-/* ... (your other styles) ... */
 
 @media screen and (max-width: 480px) {
   .projects {
@@ -156,6 +145,15 @@
 
   .column p {
     font-size: 20px;
+  }
+
+  .column span {
+    margin-top: 1.5vh;
+    border: 1px solid #afa18f;
+    padding: 10px 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    font-size: 12px;
   }
 
   .projectList {
