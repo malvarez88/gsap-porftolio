@@ -16,13 +16,25 @@
   color: #afa18f;
 }
 
+@media screen and (max-width: 480px) {
+  .description {
+    margin-top: 40vh;
+    margin-left: 30vw;
+  }
 
-@media screen and (max-width: 480px) { 
-
-.description {
-  margin-top: 40vh;
-  margin-left: 10vw;
+  .description p{
+    font-size: 20px;
+  }
 }
 
 
+@media screen and (max-width: 767px){ 
+
+  .description {
+    margin-top: 20vh;
+  }
+
+  .description p {
+    font-size: 30px;
+  }
 }

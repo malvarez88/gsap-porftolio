@@ -11,29 +11,40 @@ const Index = () => {
   const container = useRef(null);
   const imageContainer = useRef(null);
   const columnRef = useRef(null);
-  const descRef = useRef(null)
+  const descRef = useRef(null);
 
-  useLayoutEffect(() => {
-    if (window.innerWidth <= 480) {
-      ScrollTrigger.create({
-        trigger: descRef.current,
-        pin: true,
-        // markers:true,
-        start: "top top",
-        end: "bottom center",
-      });
-    }
-
-
-  gsap.registerPlugin(ScrollTrigger);
-  ScrollTrigger.create({
-    trigger: descRef.current,
-    pin: true,
-    // markers:true,
-    start: "-230px top",
-    end: "bottom center",
-  });
-}, []);
+  // useLayoutEffect(() => {
+  //   if (window.innerWidth <= 480) {
+  //     console.log("480");
+  //     ScrollTrigger.create({
+  //       trigger: descRef.current,
+  //       pin: true,
+  //       // markers:true,
+  //       start: "top top",
+  //       end: "bottom bottom",
+  //     });
+  //   } else if (window.innerWidth > 480 && window.innerWidth <= 767) {
+  //     console.log("767");
+  //     ScrollTrigger.create({
+  //       trigger: descRef.current,
+  //       pin: true,
+  //       markers: true,
+  //       start: "-100px top",
+  //       end: "bottom bottom",
+  //     });
+  //   }
+    //  else if (window.innerWidth > 500) {
+    //   console.log('500')
+    //   gsap.registerPlugin(ScrollTrigger);
+    //   ScrollTrigger.create({
+    //     trigger: descRef.current,
+    //     pin: true,
+    //     // markers:true,
+    //     start: "-230px top",
+    //     end: "bottom center",
+    //   });
+    // }
+  // }, []);
 
   return (
     <div ref={container} className={styles.projects}>

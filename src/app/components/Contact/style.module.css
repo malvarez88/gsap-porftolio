@@ -184,7 +184,7 @@
   
   .nav {
     flex-direction: column;
-    gap: 5%; 
+    gap: 15px; 
     margin-left: 20px; 
     margin-right: 20px; 
   }
@@ -194,3 +194,60 @@
     padding: 10px; 
   }
 }
+
+
+@media screen and (max-width: 767px){ 
+
+  .contactBody {
+    padding-top: 100px; 
+  }
+  
+  .title {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 50px;
+  }
+  
+  .title h2 {
+    font-size: 5vw; 
+  }
+  
+  .imageContainer {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .buttonContainer {
+    left: calc(100% - 150px);
+    top: calc(100% - 50px); 
+  }
+  
+  .button {
+    width: 100px; 
+    height: 100px;
+  }
+  
+  .button p {
+    font-size: 12px; 
+  }
+  
+  .nav {
+    flex-direction: column;
+    gap: 15px; 
+    margin-left: 20px; 
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .nav div {
+    width: 300px;
+    text-align: center;
+  }
+  
+  .info {
+    margin-top: 100px; 
+    padding: 10px; 
+  }
+  
+ }
