@@ -70,3 +70,15 @@ Huge size (Larger screen) max-width: 1281px and greater */
     letter-spacing: 0;
   }
 }
+
+@media screen and (max-width: 767px){
+  .introImage{
+    width: 200px;
+    height: 200px;
+  }
+
+  .intro h1 {
+    letter-spacing: 1px;
+  }
+  
+}

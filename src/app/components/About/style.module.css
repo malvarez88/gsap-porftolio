@@ -64,3 +64,10 @@
     font-size: 20px;
   }
 }
+
+/* @media screen and (max-width: 767px){
+  .mask, .desc{
+    padding: 40px 40px;
+  }
+
+} */
