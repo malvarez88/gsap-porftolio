@@ -22,7 +22,19 @@
     margin-left: 30vw;
   }
 
-  .description {
+  .description p{
     font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 767px){ 
+
+  .description {
+    margin-top: 20vh;
+  }
+
+  .description p {
+    font-size: 30px;
   }
 }
