@@ -52,6 +52,21 @@ Tablets Ipads portrait mode max-width:1024px
 Desktops max-width:1280px
 Huge size (Larger screen) max-width: 1281px and greater */
 
+
+@media screen and (max-width: 767px){
+  .introImage{
+    width: 200px;
+    height: 200px;
+  }
+
+  .intro h1 {
+    letter-spacing: 1px;
+  }
+  
+}
+
+
+
 @media screen and (max-width: 480px) {
   .backgroundImage {
     height: 100vh;
@@ -69,16 +84,4 @@ Huge size (Larger screen) max-width: 1281px and greater */
     margin-top: 14vh;
     letter-spacing: 0;
   }
-}
-
-@media screen and (max-width: 767px){
-  .introImage{
-    width: 200px;
-    height: 200px;
-  }
-
-  .intro h1 {
-    letter-spacing: 1px;
-  }
-  
 }

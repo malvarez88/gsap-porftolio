@@ -14,19 +14,8 @@
   font-weight: 100;
   letter-spacing: -2px;
   color: #afa18f;
+  
 }
-
-@media screen and (max-width: 480px) {
-  .description {
-    margin-top: 40vh;
-    margin-left: 30vw;
-  }
-
-  .description p{
-    font-size: 20px;
-  }
-}
-
 
 @media screen and (max-width: 767px){ 
 
@@ -38,3 +27,16 @@
     font-size: 30px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .description {
+    margin-top: 40vh;
+    margin-left: 10vw;
+  }
+
+  .description p{
+    font-size: 16px
+  }
+}
+
+
